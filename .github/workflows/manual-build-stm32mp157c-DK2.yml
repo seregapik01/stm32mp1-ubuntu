@@ -3,7 +3,7 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           path: stm32mp1-ubuntu
           
@@ -39,7 +39,7 @@ jobs:
           zip ubuntu-22.04-stm32mp157c-DK2.zip ./*.img
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ubuntu-22.04-stm32mp157c-DK2
           path: ubuntu-22.04-stm32mp157c-DK2.zip
